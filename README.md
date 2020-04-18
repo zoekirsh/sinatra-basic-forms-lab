@@ -15,13 +15,13 @@ available for adoption. Good thing you love puppies _and_ coding!
 
 ## Instructions
 
-The focus of this lab is to build a way for a user to go to a homepage,
+The focus of this lab is to build a way for a user to go to a home page,
 follow a link to a form where they can enter a puppy's information, and, upon
 submission, view the puppy's information.
 
 1. Build out a puppy class in `models/puppy.rb`. Since we are not using ActiveRecord in this lab, you will write a bare Ruby model (like you did in MOD1). Puppies should have `name`, `breed`, and `age` attributes. You will need to be able to pass these three attributes to initialization, as well as readers or accessors for the attributes.
 
-2. In `app.rb` build out a GET request to load a homepage. The homepage
+2. In `app.rb` build out a GET request to load a home page. The home page
    should go to the main route `/`.
 
 3. The home page will also need a new view `index.erb`. This page should
@@ -43,6 +43,6 @@ submission, view the puppy's information.
    renders a third view (`views/display_puppy.erb`) which displays the info for
    the puppy that was just created. Create an instance of a puppy to hold the data about the puppy you just created.
 
-6. Add a link on the homepage to the new puppy form.
+6. Add a link on the home page to the new puppy form.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/sinatra-basic-forms-lab'>Sinatra Basic Forms Lab</a> on Learn.co and start learning to code for free.</p>
