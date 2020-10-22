@@ -1,6 +1,6 @@
 # Sinatra Basic Forms Lab
 
-<img src="https://s3.amazonaws.com/learn-verified/puppies.gif" hspace="10" align="right" width="300">
+![puppies](https://s3.amazonaws.com/learn-verified/puppies.gif)
 
 Your local pet adoption store has asked you to build their new website. First
 and foremost, the store needs a form for their staff to add puppies that are
@@ -19,7 +19,11 @@ The focus of this lab is to build a way for a user to go to a home page,
 follow a link to a form where they can enter a puppy's information, and, upon
 submission, view the puppy's information.
 
-1. Build out a puppy class in `models/puppy.rb`. Since we are not using ActiveRecord in this lab, you will write a bare Ruby model (like you did in MOD1). Puppies should have `name`, `breed`, and `age` attributes. You will need to be able to pass these three attributes to initialization, as well as readers or accessors for the attributes.
+1. Build out a puppy class in `models/puppy.rb`. Since we are not using
+   ActiveRecord in this lab, you will write a bare Ruby model (like you did in
+   MOD1). Puppies should have `name`, `breed`, and `age` attributes. You will
+   need to be able to pass these three attributes to initialization, as well as
+   readers or accessors for the attributes.
 
 2. In `app.rb` build out a GET request to load a home page. The home page
    should go to the main route `/`.
@@ -35,12 +39,13 @@ submission, view the puppy's information.
    `<button>` element with a `type` of `"submit`) — a plain old `<button>`
    won't do it. If you want to change the text in the button, check out these docs:
 
-- [MDN: Input — submit](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
-- [MDN: Button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
+   - [MDN: Input — submit](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
+   - [MDN: Button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
 
-5. Now we need to make sure the form is being submitted properly. You'll need
-   to have a third controller action that takes the input from the user and
-   renders a third view (`views/display_puppy.erb`) which displays the info for
-   the puppy that was just created. Create an instance of a puppy to hold the data about the puppy you just created.
+5. Now we need to make sure the form is being submitted properly. You'll need to
+   have a third controller action that takes the input from the user and renders
+   a third view (`views/display_puppy.erb`) which displays the info for the
+   puppy that was just created. Create an instance of a puppy to hold the data
+   about the puppy you just created.
 
 6. Add a link on the home page to the new puppy form.
